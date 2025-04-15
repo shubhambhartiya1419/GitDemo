@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="2" failed="1" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-04-12T15:25:44 IST" name="Suite" finished-at="2025-04-12T15:26:49 IST" duration-ms="65496">
+    <groups>
+      <group name="ErrorHandling">
+        <method signature="ErrorValidation.LoginErrorValidation()[pri:0, instance:shubhambhartiyacademy.SeleniumFrameworkDesign.ErrorValidation@2254127a]" name="LoginErrorValidation" class="shubhambhartiyacademy.SeleniumFrameworkDesign.ErrorValidation"/>
+      </group> <!-- ErrorHandling -->
+      <group name="Purchase">
+        <method signature="submitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:shubhambhartiyacademy.SeleniumFrameworkDesign.submitOrderTest@536f2a7e]" name="submitOrder" class="shubhambhartiyacademy.SeleniumFrameworkDesign.submitOrderTest"/>
+      </group> <!-- Purchase -->
+    </groups>
+    <test started-at="2025-04-12T15:25:44 IST" name="Error Validation Test" finished-at="2025-04-12T15:26:16 IST" duration-ms="32285">
+      <class name="shubhambhartiyacademy.SeleniumFrameworkDesign.ErrorValidation">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:shubhambhartiyacademy.SeleniumFrameworkDesign.ErrorValidation@2254127a]" started-at="2025-04-12T15:25:44 IST" name="launchApplication" finished-at="2025-04-12T15:26:09 IST" duration-ms="25567" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="LoginErrorValidation()[pri:0, instance:shubhambhartiyacademy.SeleniumFrameworkDesign.ErrorValidation@2254127a]" started-at="2025-04-12T15:26:09 IST" name="LoginErrorValidation" finished-at="2025-04-12T15:26:14 IST" duration-ms="4834" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:shubhambhartiyacademy.SeleniumFrameworkDesign.ErrorValidation@2254127a]" started-at="2025-04-12T15:26:14 IST" name="tearDown" finished-at="2025-04-12T15:26:16 IST" duration-ms="1698" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- shubhambhartiyacademy.SeleniumFrameworkDesign.ErrorValidation -->
+    </test> <!-- Error Validation Test -->
+    <test started-at="2025-04-12T15:25:44 IST" name="Submit Order Test" finished-at="2025-04-12T15:26:49 IST" duration-ms="65496">
+      <class name="shubhambhartiyacademy.SeleniumFrameworkDesign.submitOrderTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:shubhambhartiyacademy.SeleniumFrameworkDesign.submitOrderTest@536f2a7e]" started-at="2025-04-12T15:25:44 IST" name="launchApplication" finished-at="2025-04-12T15:26:13 IST" duration-ms="28283" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:shubhambhartiyacademy.SeleniumFrameworkDesign.submitOrderTest@536f2a7e]" started-at="2025-04-12T15:26:13 IST" name="submitOrder" data-provider="getData" finished-at="2025-04-12T15:26:27 IST" duration-ms="13889" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Shubham123, email=shub@yup.com, productName=ADIDAS ORIGINAL}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:shubhambhartiyacademy.SeleniumFrameworkDesign.submitOrderTest@536f2a7e]" started-at="2025-04-12T15:26:27 IST" name="tearDown" finished-at="2025-04-12T15:26:27 IST" duration-ms="205" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:shubhambhartiyacademy.SeleniumFrameworkDesign.submitOrderTest@536f2a7e]" started-at="2025-04-12T15:26:27 IST" name="launchApplication" finished-at="2025-04-12T15:26:33 IST" duration-ms="6466" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:shubhambhartiyacademy.SeleniumFrameworkDesign.submitOrderTest@536f2a7e]" started-at="2025-04-12T15:26:33 IST" name="submitOrder" data-provider="getData" finished-at="2025-04-12T15:26:48 IST" duration-ms="14805" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Shubham@123, email=shub@zup.com, productName=IPHONE 13 PRO}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at shubhambhartiyacademy.SeleniumFrameworkDesign.submitOrderTest.submitOrder(submitOrderTest.java:42)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:shubhambhartiyacademy.SeleniumFrameworkDesign.submitOrderTest@536f2a7e]" started-at="2025-04-12T15:26:49 IST" name="tearDown" finished-at="2025-04-12T15:26:49 IST" duration-ms="699" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="verfiyOrderHistoryTest()[pri:0, instance:shubhambhartiyacademy.SeleniumFrameworkDesign.submitOrderTest@536f2a7e]" started-at="2025-04-12T15:26:49 IST" name="verfiyOrderHistoryTest" finished-at="2025-04-12T15:26:49 IST" depends-on-methods="shubhambhartiyacademy.SeleniumFrameworkDesign.submitOrderTest.submitOrder" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method shubhambhartiyacademy.SeleniumFrameworkDesign.submitOrderTest.verfiyOrderHistoryTest() on instance shubhambhartiyacademy.SeleniumFrameworkDesign.submitOrderTest@536f2a7e depends on not successfully finished methods 
+[shubhambhartiyacademy.SeleniumFrameworkDesign.submitOrderTest.submitOrder() on instance shubhambhartiyacademy.SeleniumFrameworkDesign.submitOrderTest@536f2a7e]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method shubhambhartiyacademy.SeleniumFrameworkDesign.submitOrderTest.verfiyOrderHistoryTest() on instance shubhambhartiyacademy.SeleniumFrameworkDesign.submitOrderTest@536f2a7e depends on not successfully finished methods 
+[shubhambhartiyacademy.SeleniumFrameworkDesign.submitOrderTest.submitOrder() on instance shubhambhartiyacademy.SeleniumFrameworkDesign.submitOrderTest@536f2a7e]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verfiyOrderHistoryTest -->
+      </class> <!-- shubhambhartiyacademy.SeleniumFrameworkDesign.submitOrderTest -->
+    </test> <!-- Submit Order Test -->
+  </suite> <!-- Suite -->
+</testng-results>
